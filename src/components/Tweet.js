@@ -14,7 +14,7 @@ const Tweet = ({name, tweet, tweets, setTweets}) => {
       <h2>Name {name}</h2>
       <h3>{tweet}</h3>
       <button onClick={deleteTweet}>Delete</button>
-      <button>Like</button>
+      <button onClick={like}>Like</button>
     </div>
   );
 }
