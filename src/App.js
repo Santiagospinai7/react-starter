@@ -4,15 +4,15 @@ import TweetList from './components/TweetList';
 import CreateTweet from './components/CreateTweet';
 
 function App() {
-  //Effect
-  useEffect(() => {
-    console.log("we run a function");
-  }, []);
-
   // State
   const [name, setName] = useState("Santiago");
   const [textInput, setTextInput] = useState("");
   const [tweets, setTweets] = useState([]);
+
+  //Effect
+  useEffect(() => {
+    console.log("we run a function");
+  }, [textInput]);
 
   return (
     <div>
